@@ -1,0 +1,11 @@
+// titulo 		: 	tabs
+// descripcion 	:	creacion de margenes para la correcta
+// 					visualizacion de codigo predefinido
+
+@mixin tabs($tabs) {
+	@for $i from 1 through $tabs {
+		.tab#{$i}:before{
+			margin-right:8px * $i
+		}
+	}
+}
