@@ -32,177 +32,166 @@ a, a:hover, a:link, a:active {
 
 [class*="sm-"], [class*="md-"], [class*="lg-"] {
   float: left;
-  margin-right: 2%;
-  margin: 0 2% 10px 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
-[class*="sm-"]:last-child, [class*="md-"]:last-child, [class*="lg-"]:last-child {
-  margin-right: 0;
-}
-
 @media screen and (min-width: 480px) {
-  .col .sm-1-1 {
+  .sm-1-1 {
     width: 100%;
-    float: left;
   }
-  .col .sm-1-2 {
-    width: 49%;
-    float: left;
+  .sm-1-2 {
+    width: 50%;
   }
-  .col .sm-1-3 {
-    width: 32%;
-    float: left;
+  .sm-1-3 {
+    width: 33.33333%;
   }
-  .col .sm-1-4 {
-    width: 23.5%;
-    float: left;
+  .sm-1-4 {
+    width: 25%;
   }
-  .col .sm-1-5 {
-    width: 18.4%;
-    float: left;
+  .sm-1-5 {
+    width: 20%;
   }
-  .col .sm-1-6 {
-    width: 15%;
-    float: left;
+  .sm-2-2 {
+    width: 100%;
   }
-  .col .sm-1-7 {
-    width: 12.57143%;
-    float: left;
+  .sm-2-3 {
+    width: 66.66667%;
   }
-  .col .sm-1-8 {
-    width: 10.75%;
-    float: left;
+  .sm-2-4 {
+    width: 50%;
   }
-  .col .sm-1-9 {
-    width: 9.33333%;
-    float: left;
+  .sm-2-5 {
+    width: 40%;
   }
-  .col .sm-1-10 {
-    width: 8.2%;
-    float: left;
+  .sm-3-3 {
+    width: 100%;
   }
-  .col .sm-1-11 {
-    width: 7.27273%;
-    float: left;
+  .sm-3-4 {
+    width: 75%;
   }
-  .col .sm-1-12 {
-    width: 6.5%;
-    float: left;
+  .sm-3-5 {
+    width: 60%;
+  }
+  .sm-4-4 {
+    width: 100%;
+  }
+  .sm-4-5 {
+    width: 80%;
+  }
+  .sm-5-5 {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .col .md-1-1 {
+  .md-1-1 {
     width: 100%;
-    float: left;
   }
-  .col .md-1-2 {
-    width: 49%;
-    float: left;
+  .md-1-2 {
+    width: 50%;
   }
-  .col .md-1-3 {
-    width: 32%;
-    float: left;
+  .md-1-3 {
+    width: 33.33333%;
   }
-  .col .md-1-4 {
-    width: 23.5%;
-    float: left;
+  .md-1-4 {
+    width: 25%;
   }
-  .col .md-1-5 {
-    width: 18.4%;
-    float: left;
+  .md-1-5 {
+    width: 20%;
   }
-  .col .md-1-6 {
-    width: 15%;
-    float: left;
+  .md-2-2 {
+    width: 100%;
   }
-  .col .md-1-7 {
-    width: 12.57143%;
-    float: left;
+  .md-2-3 {
+    width: 66.66667%;
   }
-  .col .md-1-8 {
-    width: 10.75%;
-    float: left;
+  .md-2-4 {
+    width: 50%;
   }
-  .col .md-1-9 {
-    width: 9.33333%;
-    float: left;
+  .md-2-5 {
+    width: 40%;
   }
-  .col .md-1-10 {
-    width: 8.2%;
-    float: left;
+  .md-3-3 {
+    width: 100%;
   }
-  .col .md-1-11 {
-    width: 7.27273%;
-    float: left;
+  .md-3-4 {
+    width: 75%;
   }
-  .col .md-1-12 {
-    width: 6.5%;
-    float: left;
+  .md-3-5 {
+    width: 60%;
+  }
+  .md-4-4 {
+    width: 100%;
+  }
+  .md-4-5 {
+    width: 80%;
+  }
+  .md-5-5 {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .col .lg-1-1 {
+  .lg-1-1 {
     width: 100%;
-    float: left;
   }
-  .col .lg-1-2 {
-    width: 49%;
-    float: left;
+  .lg-1-2 {
+    width: 50%;
   }
-  .col .lg-1-3 {
-    width: 32%;
-    float: left;
+  .lg-1-3 {
+    width: 33.33333%;
   }
-  .col .lg-1-4 {
-    width: 23.5%;
-    float: left;
+  .lg-1-4 {
+    width: 25%;
   }
-  .col .lg-1-5 {
-    width: 18.4%;
-    float: left;
+  .lg-1-5 {
+    width: 20%;
   }
-  .col .lg-1-6 {
-    width: 15%;
-    float: left;
+  .lg-2-2 {
+    width: 100%;
   }
-  .col .lg-1-7 {
-    width: 12.57143%;
-    float: left;
+  .lg-2-3 {
+    width: 66.66667%;
   }
-  .col .lg-1-8 {
-    width: 10.75%;
-    float: left;
+  .lg-2-4 {
+    width: 50%;
   }
-  .col .lg-1-9 {
-    width: 9.33333%;
-    float: left;
+  .lg-2-5 {
+    width: 40%;
   }
-  .col .lg-1-10 {
-    width: 8.2%;
-    float: left;
+  .lg-3-3 {
+    width: 100%;
   }
-  .col .lg-1-11 {
-    width: 7.27273%;
-    float: left;
+  .lg-3-4 {
+    width: 75%;
   }
-  .col .lg-1-12 {
-    width: 6.5%;
-    float: left;
+  .lg-3-5 {
+    width: 60%;
+  }
+  .lg-4-4 {
+    width: 100%;
+  }
+  .lg-4-5 {
+    width: 80%;
+  }
+  .lg-5-5 {
+    width: 100%;
   }
 }
 
 .btn {
-  padding: 5px;
-  text-align: center !important;
+  display: inline-block;
+  line-height: 3;
+  height: 3em;
+  text-align: center;
   color: #555;
-  font-weight: 500;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0 10px;
+  border-radius: 0.3em;
 }
 
 .btn:hover {
@@ -211,28 +200,26 @@ a, a:hover, a:link, a:active {
 
 .btn.tiny,
 .btn-pila.tiny > .btn {
-  padding: 3px 5px;
   min-width: 60px;
   font-size: .8em;
 }
 
+.btn.big,
+.btn-pila.big [class*="btn btn-"] {
+  min-width: 120px;
+  font-size: 1.2em;
+}
+
 .d2 {
-  -webkit-transform: scale(0.78);
-      -ms-transform: scale(0.78);
-          transform: scale(0.78);
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .m2 {
-  -webkit-transform: scale(1.22);
-      -ms-transform: scale(1.22);
-          transform: scale(1.22);
-}
-
-.btn.big,
-.btn-pila.big [class*="btn btn-"] {
-  padding: 10px 18px;
-  min-width: 120px;
-  font-size: 1.2em;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .btn-pila.block {
