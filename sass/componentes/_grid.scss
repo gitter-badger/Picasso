@@ -1,0 +1,25 @@
+.fila {
+	font-size: 1rem;
+	margin:5px 0 10px 0;
+	width:100%;
+	margin-top: 2em;
+}
+
+[class*="lg-"]{
+	float:left;
+	margin-right:$gutter;
+	margin: 0 $gutter 10px 0;
+	width:100%;
+	&:last-child{
+		margin-right:0;
+	}
+}
+
+@each $key,$val in $breakpoints {
+	[class*="#{$key}-"]{
+		@extend [class*="lg-"];
+	}
+	@media screen and (min-width:$val){
+		@include grilla3($cols,$gutter,$key);
+	}
+}

@@ -1,4 +1,9 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu");
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import "componentes/mixins";
-@import "componentes/variables";
 @import "componentes/general";
+@import "componentes/variables";
 @import "componentes/container";
+@import "componentes/helpers";
+@import "componentes/grid";
+@import "componentes/botones";

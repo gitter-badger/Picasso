@@ -2,30 +2,39 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	title Document
 	link(rel="stylesheet", type="text/css", href="css/normalize.css")
 	link(rel="stylesheet", type="text/css", href="css/picasso.css")
 	link(rel="stylesheet", type="text/css", href="css/index.css")
 body
-	.index
-		h1
-			span.grey #{"</"}Pi
-			span.orange c
+	.index.t_center
+		.title
+			span.code #{"</"}
+			span.grey Pi
+			span.color c
 			span.grey a
-			span.orange ss
-			span.grey o#{">"}
-	.contenedor
-		h2
-			|Framework css diseñado para hacer mas natural
+			span.color ss
+			span.grey o
+			span.code #{">"}
+		.sub
+			|Framework
+			span.color #{" css "}
+			| al natural
+		.descripcion
+			|diseñado para hacer mas natural
 			|la creacion de layouts en nuestros sitios,
 			|optimizado para dispositivos moviles
+
 		.fila
-			.col-1-4
-				.col
-					a.btn.btn-link.big Grilla
-				.col
-					a.btn.btn-link.big Grid
-				.col
-					a.btn.btn-link.big Grid
-				.col
-					a.btn.btn-link.big Grid
+			.col
+				.sm-1-4
+					a.btn.btn-sucess.btn-block(href="#") Grilla
+				.sm-1-4
+					a.btn.btn-sucess.btn-block(href="#") Componentes
+				.sm-1-4
+					a.btn.btn-sucess.btn-block(href="#") Grilla
+				.sm-1-4
+					a.btn-icon.right.btn.btn-warning(href="#")
+						|GitHub
+						i.fa.fa-github

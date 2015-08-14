@@ -25,8 +25,20 @@
     .col {
       .col-1-#{$i} { 
 			width:(100 -(($i - 1)*$gutter)) / $i;
-			float:left;
+			// float:left;
       }
     };
+  }
+}
+
+
+@mixin grilla3($cols,$gutter,$disp){
+  @for $i from 1 through $cols {
+    .col {
+      .#{$disp}-1-#{$i} { 
+      width:(100 -(($i - 1)*$gutter)) / $i;
+      float:left;
+      }
+    }
   }
 }

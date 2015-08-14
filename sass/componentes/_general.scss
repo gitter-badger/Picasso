@@ -1,3 +1,21 @@
 *{
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Ubuntu';
+	font-size: 1em;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	@extend a
+}
+a:link{
+	@extend a
+}
+a:active{
+	@extend a
+}
