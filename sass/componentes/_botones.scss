@@ -1,16 +1,21 @@
 .btn {
-	display: inline-block;
-	line-height: 3;
-	height: 3em;
+	line-height: 2.4;
+	height: 2.4em;
 	text-align: center;
 	color: #555;
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, .2);
-	padding: 0 10px;
+	padding: 0 $gutter;
 	border-radius:$radius;
+	box-shadow: inset 0 0 0 1px rgba($carbon,.2); 
 
 	&:hover{
 		text-shadow:1px 1px 0 rgba($noche,.5);
+		transform:scale(1.01);
+		z-index: 5;
+	}
+	&:active{
+		transform:scale(.99)
 	}
 }
 
@@ -130,19 +135,16 @@
 }
 
 .outline:hover{
-	filter:contrast(1);
-	box-shadow:inset 0 0 2px 0px rgba(0,0,0,.75)
+	text-shadow:none ;
+	box-shadow:0 0 1px $carbon ;
 }
 
 .btn-pila {
 	display: relative;
-	margin: auto;
 }
 
 .btn-pila [class*="btn btn-"] {
-	float: left;
 	border-radius: 0;
-	margin: 0px;
 }
 
 .btn-pila > [class*="btn btn-"]:not(:last-child):not(:first-child) {

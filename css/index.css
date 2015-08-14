@@ -18,26 +18,6 @@
           align-items: center;
   width: 100%;
   min-height: 100vh;
-  padding-top: 1em;
-  background: #eeeeee;
-}
-
-@media all and (max-width: 480px) {
-  .index {
-    font-size: 2.5em;
-  }
-}
-
-@media all and (min-width: 481px) {
-  .index {
-    font-size: 4em;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .index {
-    font-size: 7em;
-  }
 }
 
 .index span.code {
@@ -52,26 +32,39 @@
   color: #27ae60;
 }
 
+.index .title {
+  font-size: 10em;
+}
+
+@media all and (max-width: 480px) {
+  .index .title {
+    font-size: 2.2em;
+  }
+}
+
+@media all and (min-width: 481px) {
+  .index .title {
+    font-size: 5em;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .index .title {
+    font-size: 8em;
+  }
+}
+
 .index .sub {
   color: #212121;
-  font-size: .5em;
+  font-size: 2em;
 }
 
 .index .descripcion {
-  margin-top: 1em;
-  text-align: center;
-  width: 50%;
   color: #212121;
-  font-size: .2em;
 }
 
 @media all and (max-width: 480px) {
   .index .descripcion {
-    width: 80%;
-    font-size: .4em;
+    font-size: .8em;
   }
-}
-
-.index .fila {
-  width: 80%;
 }

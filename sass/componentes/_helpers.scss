@@ -1,3 +1,23 @@
 .t_center{
 	text-align: center;
 }
+
+.t_left{
+	text-align: left;
+}
+
+.t_right{
+	text-align: right;
+}
+
+.t_justify{
+	text-align: justify;
+}
+
+@each $val,$key in $directions {
+	@for $i from 1 through 5 {
+		.m_#{$val}-#{$i*5} {
+			margin-#{$val}: $i*5px !important;
+		}
+	}
+}

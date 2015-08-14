@@ -8,39 +8,62 @@ head
 	link(rel="stylesheet", type="text/css", href="css/picasso.css")
 	link(rel="stylesheet", type="text/css", href="css/index.css")
 body
-	.index.t_center
-		.title
-			span.code #{"</"}
-			span.grey Pi
-			span.color c
-			span.grey a
-			span.color ss
-			span.grey o
-			span.code #{">"}
-		.sub
-			|Framework
-			span.color #{" css "}
-			| al natural
-		.descripcion
-			|diseñado para hacer mas natural
-			|la creacion de layouts en nuestros sitios,
-			|optimizado para dispositivos moviles
+	.contenedor
+		.index
+			.fila
+				.sm-1-1
+					.title.t_right
+						span.code #{"</"}
+						span.grey Pi
+						span.color c
+						span.grey a
+						span.color ss
+						span.grey o
+						span.code #{">"}
+				.sm-1-1.m_top-25
+					.sub
+						|Framework
+						span.color #{" css "}
+						| al natural
+				.sm-1-1
+					.descripcion
+						|diseñado para hacer mas natural
+						|la creacion de layouts en nuestros sitios,
+						|optimizado para dispositivos moviles
 
-		.fila
-			.col
-				.sm-1-4
+			.fila.m_top-25
+				.md-1-5
 					a.btn-icon.right.btn.btn-sucess(href="#")
-						|Grilla
-						i.fa.fa-home.fa-2x
-				.sm-1-4
+						|Get Started !
+						i.fa.fa-coffee
+				.md-1-5
 					a.btn-icon.right.btn.btn-sucess(href="#")
-						|Componentes
-						i.fa.fa-home.fa-2x
-				.sm-1-4
+						|Components
+						i.fa.fa-puzzle-piece
+				.md-1-5
 					a.btn-icon.right.btn.btn-sucess(href="#")
-						|Issues
-						i.fa.fa-home.fa-2x
-				.sm-1-4
+						|Download CSS
+						i.fa.fa-download
+				.md-1-5
+					a.btn-icon.right.btn.btn-warning(href="#")
+						|Source Code
+						i.fa.fa-binoculars
+				.md-1-5
 					a.btn-icon.right.btn.btn-warning(href="#")
 						|GitHub
-						i.fa.fa-github.fa-2x
+						i.fa.fa-github
+			.fila.m_top-25
+				.sm-5-15
+				.sm-1-9
+					.btn.btn-info.btn-icon.left.outline
+						|Facebook
+						i.fa.fa-facebook
+				.sm-1-9.t_center
+					.btn.btn-info.btn-icon.left.outline
+						|Twitter
+						i.fa.fa-twitter
+				.sm-1-9
+					.btn.btn-primary.btn-icon.left.outline
+						|Github
+						i.fa.fa-github
+				.sm-5-15

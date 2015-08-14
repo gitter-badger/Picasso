@@ -1,5 +1,8 @@
-.contenedor {
-	width:80%;
+.contenedor{
+	width: 80%;
 	margin:auto;
 	min-height: 100vh;
+	@media all and (max-width: 480px) {
+		width: 98%;
+	}
 }

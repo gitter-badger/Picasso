@@ -7,39 +7,32 @@
 	align-items:center;
 	width:100%;
 	min-height:100vh;
-	padding-top:1em;
-	background: $blanco;
-	@media all and (max-width:480px){
-		font-size: 2.5em;
-		}
-	@media all and (min-width:481px){
-		font-size: 4em;
-		}
-	@media all and (min-width:768px){
-		font-size: 7em;
-		}
 	span{
 		&.code{color:$nefritis;}
 		&.grey{color:$asbesto;}
 		&.color{color:$nefritis;}
 	}
+	.title {
+		font-size: 10em;
+		@media all and (max-width:480px){
+			font-size: 2.2em;
+			}
+		@media all and (min-width:481px){
+			font-size: 5em;
+			}
+		@media all and (min-width:768px){
+			font-size: 8em;
+			}
+	}
 	.sub {
 		color:$carbon;
-		font-size: .5em;
+		font-size: 2em;
 	}
 	.descripcion {
-		margin-top:1em;
-		text-align: center;
-		width: 50%;
 		color:$carbon;
-		font-size: .2em;
 		@media all and (max-width:480px){
-		width: 80%;
-		font-size: .4em;
+		font-size: .8em;
 		}
-	}
-	.fila {
-		width: 80%;
 	}
 }
 

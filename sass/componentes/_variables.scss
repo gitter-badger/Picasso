@@ -1,3 +1,4 @@
+
 // Paleta de colores
 	// Verdes
 	$turquesa:#1abc9c;
@@ -31,13 +32,30 @@
 	$negro:#121212;
 
 // Columnas
-	$cols : 5;
+	$cols : 20;
 
 // Separacion
 	$gutter: 10px;
 
 // Radio de curva
 	$radius:.3em;
+
+$directions : (
+	top :"top",
+	left:"left",
+	bottom:"bottom",
+	right:"right"
+	);
+
+
+$buttons :(
+	default:$nublado,
+	info:$royal,
+	sucess:$esmeralda,
+	warning:$zanahoria,
+	danger:$granada,
+	reverse:$carbon,
+	);
 
 // Pantallas
 

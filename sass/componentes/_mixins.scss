@@ -10,37 +10,41 @@
 	}
 }
 
-@mixin grilla1($cols,$gutter){
-  @for $i from 1 through $cols {
-    .col-1-#{$i} {
-      .col {
-        width:(100 -(($i - 1)*$gutter)) / $i;
-      }
-    };
-  }
-}
+// @mixin grilla1($cols,$gutter){
+//   @for $i from 1 through $cols {
+//     .col-1-#{$i} {
+//       .col {
+//         width:(100 -(($i - 1)*$gutter)) / $i;
+//       }
+//     };
+//   }
+// }
 
-@mixin grilla2($cols,$gutter){
-  @for $i from 1 through $cols {
-    .col {
-      .col-1-#{$i} {
-			width:(100 -(($i - 1)*$gutter)) / $i;
-			// float:left;
-      }
-    };
-  }
-}
+// @mixin grilla2($cols,$gutter){
+//   @for $i from 1 through $cols {
+//     .col {
+//       .col-1-#{$i} {
+// 			width:(100 -(($i - 1)*$gutter)) / $i;
+// 			// float:left;
+//       }
+//     };
+//   }
+// }
 
 
-@mixin grilla3($cols,$gutter,$disp){
-  @for $i from 1 through $cols {
-    .col {
-      .#{$disp}-1-#{$i} {
-      width:(100 -(($i - 1)*$gutter)) / $i;
-      }
-    }
-  }
-}
+// @mixin grilla3($cols,$gutter,$disp){
+//   @for $i from 1 through $cols {
+//     .col {
+//       .#{$disp}-1-#{$i} {
+//       width:(100 -(($i - 1)*$gutter)) / $i;
+//       }
+//     }
+//   }
+// }
+
+// titulo   : grilla
+// descrip  : creacion de la grilla de trabajo teniendo
+//            en cuenta el diseño responsivo
 
 @mixin grilla($cols,$gutter,$disp){
   @for $i from 1 through $cols {

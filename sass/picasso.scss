@@ -1,8 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Ubuntu");
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+// Siempre debe ir al inicio del sass el 
+// archivo de variables para su correcta lectura
+@import "componentes/variables";
+
 @import "componentes/mixins";
 @import "componentes/general";
-@import "componentes/variables";
 @import "componentes/container";
 @import "componentes/helpers";
 @import "componentes/grid";
