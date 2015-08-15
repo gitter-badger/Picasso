@@ -44,7 +44,14 @@ $directions : (
 	top :"top",
 	left:"left",
 	bottom:"bottom",
-	right:"right"
+	right:"right",
+	);
+
+$align : (
+	left:"left",
+	right:"right",
+	center :"center",
+	justify:"justify",
 	);
 
 
@@ -57,12 +64,12 @@ $buttons :(
 	reverse:$carbon,
 	);
 
-// Pantallas 
+// Pantallas
 
 $movil : 480px;
 $tableta : 768px;
 $escritorio : 1024px;
-$tv : 1400px;
+$tv : 1280px;
 
 $breakpoints : (
 	sm:$movil,
@@ -70,11 +77,14 @@ $breakpoints : (
 	lg:$escritorio,
 	);
 
-$sm-min:240px;
-$sm-max : $movil;
 
-$md-min:$movil+1;
-$md-max:$escritorio - 1;
+$rangeDisp : (
+	sm-min:240px,
+	sm-max : $movil,
 
-$lg-min:$tv;
-$lg-max:$tv*2;
+	md-min:$movil+1,
+	md-max:$tableta,
+
+	lg-min:$tableta+1,
+	lg-max:$tv*2,
+);

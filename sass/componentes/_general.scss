@@ -19,3 +19,8 @@ a:link{
 a:active{
 	@extend a
 }
+
+hr{
+	border:none;
+	border-top:1px solid rgba($carbon,.5)
+}

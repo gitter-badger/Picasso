@@ -8,10 +8,10 @@
 	float:left;
 	padding-right: $gutter/2;
 	padding-left: $gutter/2;
-	margin: 1px 0;
 	width:100%;
 }
 
+@include grilla($cols,$gutter,"xs");
 
 @each $key,$val in $breakpoints {
 	[class*="#{$key}-"]{
@@ -22,4 +22,3 @@
 	}
 }
 
-@include grilla($cols,$gutter,"xs");

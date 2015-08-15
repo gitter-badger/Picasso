@@ -1,23 +1,30 @@
-.t_center{
-	text-align: center;
-}
-
-.t_left{
-	text-align: left;
-}
-
-.t_right{
-	text-align: right;
-}
-
-.t_justify{
-	text-align: justify;
+@each $val,$key in $align {
+	.t-#{$val} {
+		text-align:#{$val};
+	}
 }
 
 @each $val,$key in $directions {
 	@for $i from 1 through 5 {
-		.m_#{$val}-#{$i*5} {
+		.m-#{$val}-#{$i*5} {
 			margin-#{$val}: $i*5px !important;
 		}
 	}
+}
+
+@each $val,$key in $breakpoints {
+	@media all and (min-width:map-get($rangeDisp,#{$val+'-min'})) and (max-width:map-get($rangeDisp,#{$val+'-max'})) {
+		.hide-#{$val} {
+			display: none !important;
+		}
+	}
+}
+
+.block{
+	width:100% !important;
+}
+
+.between{
+	display:flex;
+	justify-content:space-between;
 }

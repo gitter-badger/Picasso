@@ -1,0 +1,40 @@
+@import "componentes/variables";
+
+.index{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	min-height:100vh;
+}
+span{
+	&.code{color:$nefritis;}
+	&.grey{color:$asbesto;}
+	&.color{color:$nefritis;}
+}
+.title {
+	font-size: 10em;
+	@media all and (max-width:480px){
+		font-size: 2.2em;
+		}
+	@media all and (min-width:481px){
+		font-size: 5em;
+		}
+	@media all and (min-width:768px){
+		font-size: 8em;
+		}
+}
+.sub {
+	color:$carbon;
+	font-size: 2em;
+}
+.descripcion {
+	color:$carbon;
+	@media all and (max-width:480px){
+	font-size: .8em;
+	}
+}
+
+
+

@@ -20,51 +20,51 @@
   min-height: 100vh;
 }
 
-.index span.code {
+span.code {
   color: #27ae60;
 }
 
-.index span.grey {
+span.grey {
   color: #7f8c8d;
 }
 
-.index span.color {
+span.color {
   color: #27ae60;
 }
 
-.index .title {
+.title {
   font-size: 10em;
 }
 
 @media all and (max-width: 480px) {
-  .index .title {
+  .title {
     font-size: 2.2em;
   }
 }
 
 @media all and (min-width: 481px) {
-  .index .title {
+  .title {
     font-size: 5em;
   }
 }
 
 @media all and (min-width: 768px) {
-  .index .title {
+  .title {
     font-size: 8em;
   }
 }
 
-.index .sub {
+.sub {
   color: #212121;
   font-size: 2em;
 }
 
-.index .descripcion {
+.descripcion {
   color: #212121;
 }
 
 @media all and (max-width: 480px) {
-  .index .descripcion {
+  .descripcion {
     font-size: .8em;
   }
 }
