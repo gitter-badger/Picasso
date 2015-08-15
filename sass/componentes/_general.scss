@@ -7,17 +7,19 @@ body {
 	font-size: 1em;
 }
 
+
 a{
 	text-decoration: none;
-}
-a:hover{
-	@extend a
-}
-a:link{
-	@extend a
-}
-a:active{
-	@extend a
+	color:$royal;
+	&:link,&:visited{
+		@extend a;
+	}
+	&:hover{
+		color:darken($royal,10);
+	}
+	&:not(.btn){
+		color:none;
+	}
 }
 
 hr{
