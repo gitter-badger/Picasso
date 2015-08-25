@@ -1,3 +1,8 @@
+pre {
+  font-size: .7em !important;
+  line-height: .7em;
+}
+
 .index {
   display: flex;
   flex-direction: column;
