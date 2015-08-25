@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/picasso.css"/>
+    <link rel="stylesheet" type="text/css" href="css/prism.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <header></header>
+    <main class="contenedor">
+      <div class="fila">
+        <div class="sm-1-1">
+          <div class="title t-right"><a href="/"><span class="code">&lt;/</span><span class="grey">Pi</span><span class="color">c</span><span class="grey">a</span><span class="color">ss</span><span class="grey">o</span><span class="code">&gt;</span></a></div>
+        </div>
+        <div class="sm-1-1 t-right">
+          <h1><small><a href="components.html">Componentes < Grilla /></a></small></h1>
+        </div>
+        <div class="sm-1-1 t-right">
+          <hr/>Este es un sistema de grilla basado en 12 columnas el cual
+          se ajusta de mejor forma al contenido que se requiere en el
+          ancho de la pagina ofreciendo anchos de columnas con
+          multiplos de 2,3,4 y hasta 6, dadndo la posibilidad de
+          manipular dentro de cada una de las columnas diversos anchos.
+          Siempre y cuando la suma de todas estas no superen las 12 columnas
+        </div>
+      </div>
+      <hr/>
+      <div class="fila">
+        <h1 class="t-center">Ejemplo .sm-1-1</h1>
+        <div class="sm-1-1">
+          <div class="btn btn-sucess block"></div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="sm-1-1">
+          <ol class="codigo">
+            <li class="tab1">&lt;div class='fila'&gt;</li>
+            <li class="tab2">&lt;div class='sm-1-1'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab1">&lt;/div&gt;</li>
+          </ol>
+        </div>
+      </div>
+      <hr/>
+      <div class="fila">
+        <h1 class="t-center">Ejemplo .xs-1-2</h1>
+        <div class="sm-1-2">
+          <div class="btn btn-sucess block"></div>
+        </div>
+        <div class="sm-1-2">
+          <div class="btn btn-sucess block"></div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="sm-1-1">
+          <ol class="codigo">
+            <li class="tab1">&lt;div class='fila'&gt;</li>
+            <li class="tab2">&lt;div class='sm-1-2'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab2">&lt;div class='sm-1-2'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab1">&lt;/div&gt;</li>
+          </ol>
+        </div>
+      </div>
+      <hr/>
+      <div class="fila">
+        <h1 class="t-center">Ejemplo .lg-1-2 y .lg-1-2.xs-1-1</h1>
+        <div class="lg-1-2 md-1-4">
+          <div class="btn btn-sucess block"></div>
+        </div>
+        <div class="lg-1-2 xs-1-3">
+          <div class="btn btn-sucess block"></div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="sm-1-1">
+          <ol class="codigo">
+            <li class="tab1">&lt;div class='fila'&gt;</li>
+            <li class="tab2">&lt;div class='lg-1-2 md-1-4'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab2">&lt;div class='lg-1-2 xs-1-3'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab1">&lt;/div&gt;</li>
+          </ol>
+        </div>
+      </div>
+      <hr/>
+      <div class="fila">
+        <h1 class="t-center">Ejemplo columnas anidadas en columna</h1>
+        <div class="lg-1-2">
+          <div class="btn btn-danger xs-2-6"></div>
+          <div class="btn btn-danger xs-3-6"></div>
+          <div class="btn btn-danger xs-1-6"></div>
+        </div>
+        <div class="lg-1-2">
+          <ol class="codigo block">
+            <li class="tab1">&lt;div class='fila'&gt;</li>
+            <li class="tab2">&lt;div class='lg-1-2'&gt;</li>
+            <li class="tab3">&lt;div class='xs-2-6'&gt;</li>
+            <li class="tab4">...</li>
+            <li class="tab3">&lt;/div&gt;</li>
+            <li class="tab3">&lt;div class='xs-3-6'&gt;</li>
+            <li class="tab4">...</li>
+            <li class="tab3">&lt;/div&gt;</li>
+            <li class="tab3">&lt;div class='xs-1-6'&gt;</li>
+            <li class="tab4">...</li>
+            <li class="tab3">&lt;/div&gt;</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab1">&lt;/div&gt;</li>
+          </ol>
+        </div>
+      </div>
+      <hr/>
+      <div class="fila">
+        <h1 class="t-center">Ejemplo columnas en escalera</h1>
+        <div class="fila xs-1-1">
+          <div class="xs-1-2 btn bg-verde-c"></div>
+          <div class="xs-1-2">
+            <div class="xs-1-2 btn bg-verde"></div>
+            <div class="xs-1-2">
+              <div class="xs-1-3 btn bg-verde-o"></div>
+              <div class="xs-1-3 btn bg-verde-o"></div>
+              <div class="xs-1-3 btn bg-verde-o"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lg-1-1">
+          <ol class="codigo">
+            <li class="tab1">&lt;div class='fila'&gt;</li>
+            <li class="tab2">&lt;div class='xs-1-1'&gt;</li>
+            <li class="tab3">...</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab2">&lt;div class='xs-1-2'&gt;</li>
+            <li class="tab3">&lt;div class='xs-1-2'&gt;</li>
+            <li class="tab4">...</li>
+            <li class="tab3">&lt;/div&gt;</li>
+            <li class="tab3">&lt;div class='xs-1-2'&gt;</li>
+            <li class="tab4">&lt;div class='xs-1-3'&gt;</li>
+            <li class="tab5">...</li>
+            <li class="tab4">&lt;/div&gt;</li>
+            <li class="tab4">&lt;div class='xs-1-3'&gt;</li>
+            <li class="tab5">...</li>
+            <li class="tab4">&lt;/div&gt;</li>
+            <li class="tab4">&lt;div class='xs-1-3'&gt;</li>
+            <li class="tab5">...</li>
+            <li class="tab4">&lt;/div&gt;</li>
+            <li class="tab3">&lt;/div&gt;</li>
+            <li class="tab2">&lt;/div&gt;</li>
+            <li class="tab1">&lt;/div&gt;</li>
+          </ol>
+        </div>
+        <div class="lg-1-2 push-lg-1-4">
+          <pre class="language-markup line-numbers"><code>&lt;div class='fila'&gt;
+  &lt;div class='xs-1-1'&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div class='xs-1-2'&gt;
+    &lt;div class='xs-1-2'&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class='xs-1-2'&gt;
+      &lt;div class='xs-1-3'&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class='xs-1-3'&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class='xs-1-3'&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/picasso.js"></script>
+    <script src="js/prism.js"></script>
+  </body>
+</html>

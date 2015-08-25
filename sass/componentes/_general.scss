@@ -1,21 +1,49 @@
 *{
 	box-sizing: border-box;
+	&:after{
+		@extend *;
+	}
+	&:before{
+		@extend *;
+	}
 }
 
 body {
+	color:$carbon;
 	font-family: 'Ubuntu';
 	font-size: 1em;
+	line-height: #{20/14};
 }
 
+h1,h2,h3 { 
+	display:block;
+	widht:100%;
+	margin:$gutter*2 0 $gutter 0; 
+	small {
+		font-size: #{3*100/4}%;
+	}
+}
+
+h4,h5,h5{ margin:10px 0 10px 0;
+	small {
+		font-size: #{4*100/5}%;
+	}
+}
+
+@for $i from 0 through 5 {
+	h#{$i+1}{
+		font-size: 2.25 - ($i*.3em)
+	}
+}
 
 a{
 	text-decoration: none;
-	color:$royal;
+	color:$azul;
 	&:link,&:visited{
 		@extend a;
 	}
 	&:hover{
-		color:darken($royal,10);
+		color:darken($azul,20);
 	}
 	&:not(.btn){
 		color:none;
@@ -24,5 +52,5 @@ a{
 
 hr{
 	border:none;
-	border-top:1px solid rgba($carbon,.5)
+	border-top:1px solid rgba($gris,.5)
 }

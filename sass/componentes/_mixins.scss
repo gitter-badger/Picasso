@@ -3,13 +3,40 @@
 // descripcion	:	creacion de margenes para la correcta
 //					visualizacion de codigo predefinido
 
-@mixin tabs($tabs) {
-	@for $i from 1 through $tabs {
-		.tab#{$i}:before{
-			margin-right:8px * $i
-		}
-	}
+@function tbs($cantidad){
+  $tbs:"";
+  @for $i from 1 through $cantidad  {
+    $tbs: "\2022 " + $tbs;
+  }
+  @return $tbs;
 }
+
+@mixin tabs($cantidad){
+
+    .inside.tab1,.inside.tab1:before {color:$rojo !important;}
+    .tab1{
+      &:before{
+        color:rgba(0,0,0,.2);
+      }
+      &:hover{
+        color:$rojo !important;
+        &:before{
+          color:$rojo;
+        }
+      }
+    }
+  @for $i from 1 through $cantidad{
+    .tab#{$i}{
+      @extend .tab1;
+      &:before{
+        color:rgba(0,0,0,.2);
+        content:tbs($i);
+      }
+    }
+  }
+}
+
+@include tabs(9);
 
 // --------------------------------------------
 // titulo   : grilla
@@ -20,8 +47,10 @@
   @for $i from 1 through $cols {
       @for $j from $i through $cols {
       	.#{$disp}-#{$i}-#{$j}{
-      		width: (100% / $j)*$i;
-      	}
+          $width: ($i/$j)*100%;
+          $sep : (( $j - $i )*($gutter)*2)/$j;
+          width: unquote("calc(" + #{$width} + " - " + #{$sep} + ")");
+        }
       	.push-#{$disp}-#{$i}-#{$j}{
       		margin-left: (100% / $j)*$i;
       	}
@@ -35,5 +64,5 @@
 //            en cuenta el diseño responsivo
 
 @mixin botones($color){
-    
+
 }

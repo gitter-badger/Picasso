@@ -2,8 +2,14 @@
 	width: 80%;
 	margin:auto;
 	min-height: 100vh;
-	@media all and (max-width: 480px) {
+	@media all and (max-width: $movil) {
 		width: 98%;
+	}
+	@media (min-width: $tableta){
+		width: $tableta - 20px;
+	}
+	@media (min-width: $escritorio){
+		width: $escritorio - 30px;
 	}
 }
 

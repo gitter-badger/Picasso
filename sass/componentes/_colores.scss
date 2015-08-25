@@ -1,0 +1,22 @@
+@each $val,$key in $pallete {
+	.bg-#{$val}-c{
+		background-color: lighten($key,20) !important;
+	}
+	.bg-#{$val}{
+		background-color: $key !important;
+	}
+	.bg-#{$val}-o{
+		background-color: darken($key,20) !important;
+	}
+
+
+	.tcolor-#{$val}-c{
+		color: lighten($key,20) !important;
+	}
+	.tcolor-#{$val}{
+		color: $key !important;
+	}
+	.tcolor-#{$val}-o{
+		color: darken($key,20) !important;
+	}
+}

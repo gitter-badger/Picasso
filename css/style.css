@@ -8,15 +8,15 @@
 }
 
 span.code {
-  color: #27ae60;
+  color: #58d68d;
 }
 
 span.grey {
-  color: #7f8c8d;
+  color: #4d4d4d;
 }
 
 span.color {
-  color: #27ae60;
+  color: #58d68d;
 }
 
 .title {
@@ -42,12 +42,12 @@ span.color {
 }
 
 .sub {
-  color: #212121;
+  color: #4d4d4d;
   font-size: 2em;
 }
 
 .descripcion {
-  color: #212121;
+  color: #4d4d4d;
 }
 
 @media all and (max-width: 480px) {

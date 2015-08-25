@@ -1,44 +1,66 @@
 
 // Paleta de colores
-	// Verdes
-	$turquesa:#1abc9c;
-	$seagreen:#16a085;
-	$esmeralda:#2ecc71;
-	$nefritis:#27ae60;
 
-	// Azules
-	$river:#3498db;
-	$royal:#2980b9;
-	$asfalto:#34495e;
-	$noche:#2c3e50;
+	$rojo:#e74c3c ;
+	$rosa:#e91e63 ;
+	$purpura:#9c27b0 ;
+	$violeta:#673ab7 ;
+	$indigo:#3f51b5 ;
+	$azul:#2196f3 ;
+	$oceano:#03a9f4 ;
+	$cyan:#00bcd4 ;
+	$teal:#009688 ;
+	$verde:#58d68d ;
+	$aceituna:#8bc34a ;
+	$lima:#cddc39 ;
+	$amarillo:#ffeb3b ;
+	$amber:#ffc107 ;
+	$naranja:#ff9800 ;
+	$calabaza:#ff5722 ;
+	$marron:#795548 ;
+	$gris:#9e9e9e ;
+	$asbesto:#607d8b ;
+	$carbon : darken($asbesto + $gris,70);
+	$blanco : lighten($asbesto + $gris,70);
 
-	// Naranjas
-	$girasol:#f1c40f;
-	$naranja:#f39c12;
-	$zanahoria:#e67e22;
-	$calabaza:#d35400;
 
-	// Rojos
-	$alizarin:#e74c3c;
-	$granada:#c0392b;
 
-	// Grises
-	$blanco:#eeeeee;
-	$nublado:#ecf0f1;
-	$plata:#bdc3c7;
-	$concreto:#95a5a6;
-	$asbesto:#7f8c8d;
-	$carbon:#212121;
-	$negro:#121212;
+// Paleta de colores
+$pallete:(
+	rojo:$rojo,
+	rosa:$rosa,
+	purpura:$purpura,
+	violeta:$violeta,
+	indigo:$indigo,
+	azul:$azul,
+	oceano:$oceano,
+	cyan:$cyan,
+	teal:$teal,
+	verde:$verde,
+	aceituna:$aceituna,
+	lima:$lima,
+	amarillo:$amarillo,
+	amber:$amber,
+	naranja:$naranja,
+	calabaza:$calabaza,
+	marron:$marron,
+	gris:$gris,
+	asbesto:$asbesto,
+	carbon:$carbon,
+	blanco:$blanco,
+);
 
 // Columnas
-	$cols : 20;
+	$cols : 12;
 
 // Separacion
-	$gutter: 10px;
+	$gutter: 8px;
 
 // Radio de curva
 	$radius:.3em;
+
+// Factor de incremento/decremento
+	$factor : 20 / 14;
 
 $directions : (
 	top :"top",
@@ -56,12 +78,13 @@ $align : (
 
 
 $buttons :(
-	default:$nublado,
-	info:$royal,
-	sucess:$esmeralda,
-	warning:$zanahoria,
-	danger:$granada,
-	reverse:$carbon,
+	default:lighten($gris,30),
+	link:$violeta,
+	info:$azul,
+	sucess:$verde,
+	warning: darken(($amarillo + $rojo)/2,5),
+	danger:$rojo,
+	primary:darken($gris,40),
 	);
 
 // Pantallas
@@ -88,5 +111,3 @@ $rangeDisp : (
 	lg-min:$tableta+1,
 	lg-max:$tv*2,
 );
-
-

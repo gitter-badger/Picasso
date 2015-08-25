@@ -4,6 +4,12 @@
 	}
 }
 
+.t-muted{color:$gris;}
+.t-uppercase{text-transform: uppercase;}
+.t-lowercase{text-transform: lowercase;}
+.t-capitalize{text-transform: capitalize;}
+
+
 @each $val,$key in $directions {
 	@for $i from 1 through 5 {
 		.m-#{$val}-#{$i*5} {
@@ -12,8 +18,13 @@
 	}
 }
 
+@media all and (max-width:479px) {
+	.hide-xs{
+		display: none;
+	}
+}
 @each $val,$key in $breakpoints {
-	@media all and (min-width:map-get($rangeDisp,#{$val+'-min'})) and (max-width:map-get($rangeDisp,#{$val+'-max'})) {
+	@media all and (min-width:$key) {
 		.hide-#{$val} {
 			display: none !important;
 		}
@@ -24,7 +35,101 @@
 	width:100% !important;
 }
 
-.between{
+
+/* // Espaciado de los elementos */
+// Espaciado proporcional
+.between,.around{
 	display:flex;
+}
+// Entre elementos
+.between{
 	justify-content:space-between;
 }
+// Alrededor de los elementos
+.around{
+	justify-content:space-around;
+}
+
+
+/* // Redimension de los elementos */
+// Escala reducida
+.d2 {
+	transform: scale(.7);
+}
+// Escala aumentada
+.m2 {
+	transform: scale(1.3);
+}
+
+/* // Presentacion de codigo de trabajo */
+@mixin codigo($colorSkin){
+ol.codigo{
+	position: relative;
+	width: 60%;
+	margin:auto;
+	background: darken($colorSkin,10);
+	padding: $gutter*3 0px 0px $gutter*4.6;
+	font-size: .9em;
+	font-family: consolas,'Courier New';
+	border:2px solid $colorSkin;
+	border-radius: $gutter $gutter $gutter/2 $gutter/2 ;
+	box-shadow: inset $gutter*4.6 0 0 0 darken($colorSkin,25);
+
+	&:before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: $colorSkin;
+		color:lighten($colorSkin,50);
+		font-weight: bold;
+		font-size: $gutter*2;
+		text-align:right;
+		content:"<codigo/>";
+		line-height: $gutter*3;
+		padding-right: $gutter;
+		border-radius: $gutter/2 $gutter/2 0 0;
+	}
+	&:after{
+		content:"";
+		position: absolute;
+		top:$gutter*3;
+		left: 0;
+		width: $gutter*4.6;
+		height: calc(100% - #{$gutter*3});
+		z-index: 3;
+		background: rgba(darken($colorSkin,10),.5);
+		@media (max-width:$movil){
+			width: $gutter*4;
+		}
+	}
+
+	@media (max-width:$movil){
+		box-shadow: inset $gutter*4 0 0 0 darken($colorSkin,25);
+		padding: $gutter*3 0px 0px $gutter*4;
+	}
+	@media (max-width: $tableta){
+		width: 100%;
+	}
+		& li {
+			color:lighten($colorSkin,50);
+			cursor:pointer;
+			padding-left: $gutter;
+				&:hover{
+					background: rgba(darken($colorSkin,30),.2);
+					color:lighten($colorSkin,100);
+				}
+				@media (max-width:$movil){
+					font-size: .75em;
+				}
+				& [class*="tab"]~[class*="tab"]{
+					color:red;
+				}
+			}
+		}
+
+	}
+
+
+
+@include codigo($carbon);
