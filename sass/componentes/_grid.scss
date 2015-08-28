@@ -1,9 +1,9 @@
 .fila {
+	display: inline-block;
 	position:relative;
 	margin: $gutter/2 auto;
 	padding: 0 $gutter/2;
 	width:100%;
-	overflow: auto;
 	clear: both;
 		&  .fila {
 			padding:0;

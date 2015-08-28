@@ -1,6 +1,6 @@
 
 // Paleta de colores
-
+	$transparente:rgba(0,0,0,0);
 	$rojo:#e74c3c ;
 	$rosa:#e91e63 ;
 	$purpura:#9c27b0 ;
@@ -14,7 +14,7 @@
 	$aceituna:#8bc34a ;
 	$lima:#cddc39 ;
 	$amarillo:#ffeb3b ;
-	$amber:#ffc107 ;
+	$ambar:#ffc107 ;
 	$naranja:#ff9800 ;
 	$calabaza:#ff5722 ;
 	$marron:#795548 ;
@@ -40,7 +40,7 @@ $pallete:(
 	aceituna:$aceituna,
 	lima:$lima,
 	amarillo:$amarillo,
-	amber:$amber,
+	ambar:$ambar,
 	naranja:$naranja,
 	calabaza:$calabaza,
 	marron:$marron,
@@ -57,10 +57,10 @@ $pallete:(
 	$gutter: 8px;
 
 // Radio de curva
-	$radius:.3em;
+	$radius:0em;
 
 // Factor de incremento/decremento
-	$factor : 20 / 14;
+	$factor : 1.5;
 
 $directions : (
 	top :"top",
@@ -78,7 +78,7 @@ $align : (
 
 
 $buttons :(
-	default:lighten($gris,30),
+	default:lighten($gris,0),
 	link:$violeta,
 	info:$azul,
 	sucess:$verde,

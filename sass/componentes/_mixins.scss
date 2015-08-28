@@ -11,6 +11,28 @@
   @return $tbs;
 }
 
+@function LinearGradientDott($lineas,$color1,$color2){
+  $cant: ($lineas*2) - 1;
+  $porc: 100%/$cant;
+  $dott:"linear-gradient(90deg";
+  $color:"";
+  @for $i from 1 through $cant {
+    @if $i % 2 == 0 {
+      $color:$color2;
+    } @else if $i % 2 == 1 {
+      $color:$color1;
+    }
+
+    $dott: $dott +" ,
+     "+ $color +" "+ ($porc*($i - 1)) + "";
+    $dott: $dott +" , "+ $color +" "+ ($porc*$i ) + "";
+  }
+
+  $dott: $dott + ")";
+
+  @return unquote($dott);
+}
+
 @mixin tabs($cantidad){
 
     .inside.tab1,.inside.tab1:before {color:$rojo !important;}

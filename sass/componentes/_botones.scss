@@ -1,27 +1,22 @@
+
 .btn {
 	cursor: pointer;
 	display: inline-block;
-	line-height:3em;
-	height: 3em;
+	line-height:2em;
+	height: 2em;
 	text-align: center;
-	color: darken($gris,40);
-	border: 1px solid darken($gris,20);
+	color: $carbon;
+	box-shadow:inset 0 0 0px 1px darken($gris,30);
+	// border: 1px solid darken($gris,20);
 	background: lighten($gris,20);
-	padding: 0 $gutter;
+	padding: 0 $gutter*$factor;
 	border-radius:$radius;
+	margin-top: $gutter/2;
 	margin-bottom: $gutter/2;
-	overflow: hidden;	
-	&:hover{
-		text-shadow:1px 1px 0 rgba(darken($gris,20),.5);
-	}
 	&:active{
-		transform:scale(0.9);
-
+		transform:scale(0.96);
 	}
 }
-
-
-
 
 .btn-info,
 .btn-sucess,
@@ -36,27 +31,116 @@
 	color: lighten($gris,100) !important;
 }
 
-
-
 @each $val,$key in $buttons {
 	.btn-#{$val}{
 		background:$key;
-		border-color: $key;
+		box-shadow:inset 0 0 0px 1px $key;
 		&:hover{
-			background: darken($key,5);
+			background: darken($key,20);
 		}
-		&.outline,&.outline i  {
+		&.outline{
+			background: lighten($gris,40) !important;
 			color:$key !important;
+			&:hover{
+				background: darken($key,20) !important;
+				color:lighten($gris,40)  !important;
+			}
+		}
+		&.invert{
+			background: darken($carbon,10) !important;
+			color:$key !important;
+			&:hover{
+				background: darken($key,20) !important;
+				color:lighten($gris,40)  !important;
+			}
+		}
+
+		&.active{
+			background: darken($key,20) !important;
 		}
 	}
 }
 
-.btn-link {
-	color: $violeta;
-}
-
 .outline {
 	background: lighten($gris,40) !important;
+}
+
+.disabled {
+	cursor: not-allowed !important;
+	pointer-events: none !important;
+		&:after{
+		float: left;
+		position: relative;
+		left: -($gutter*$factor);
+		content: "";
+		width: calc(100% + #{($gutter*$factor)*2.1});
+		height: 100%;
+		bottom: 100%;
+		background: rgba(255,255,255,.5);
+		z-index: 2;
+	}
+	&.invert{
+		&:after{
+			background: rgba(0,0,0,.75);
+		}
+	}
+}
+
+.active{
+	&:after{
+		float: left;
+		position: relative;
+		left: -8px;
+		content: "";
+		width: calc(100% + 14px);
+		min-height: 1px;
+		bottom: 2px;
+		box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.7);
+		z-index: -2;
+	}
+}
+
+a[disabled]{@extend .disabled}
+button[disabled]{@extend .disabled}
+input[disabled]{@extend .disabled}
+
+.btn-link {
+	border-color:transparent !important;
+	background: none !important;
+	color: $violeta;
+	&:hover{
+		&:after{
+		float:left;
+		position:relative;
+		bottom:$gutter;
+		left:0px;
+		content:"";
+		width:100%;
+		height:1px;
+		background: LinearGradientDott(11,darken($violeta,20),$blanco);
+		}
+	}
+	&.outline{
+		box-shadow:inset 0 0 0px 1px $violeta !important;
+			&:hover{
+			&:after{
+			background: LinearGradientDott(11,$blanco,darken($violeta,20));
+			}
+		}
+	}
+	&.invert{
+		text-shadow:0 0 .5em rgba(lighten($violeta,80),.1);
+			&:hover{
+		text-shadow: 0 0 2px rgba($violeta,.5);
+			&:after{
+			background: LinearGradientDott(11,$blanco,darken($violeta,20));
+			}
+		}
+	}
+}
+
+.btn-primary.invert {
+	color: lighten($gris,100) !important;
 }
 
 .btns {

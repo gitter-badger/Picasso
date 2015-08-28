@@ -15,6 +15,9 @@
 		.m-#{$val}-#{$i*5} {
 			margin-#{$val}: $i*5px !important;
 		}
+		.p-#{$val}-#{$i*5} {
+			padding-#{$val}: $i*5px !important;
+		}
 	}
 }
 
@@ -38,8 +41,9 @@
 
 /* // Espaciado de los elementos */
 // Espaciado proporcional
-.between,.around{
+.between,.around,.middle{
 	display:flex;
+	flex-direction:column;
 }
 // Entre elementos
 .between{
@@ -50,6 +54,9 @@
 	justify-content:space-around;
 }
 
+.middle{
+	align-items:center;
+}
 
 /* // Redimension de los elementos */
 // Escala reducida
